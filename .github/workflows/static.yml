@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shree Radhe Krishna Tractors</title>
+  <link rel="stylesheet" type="text/css" href="tractor.css">
+</head>
+<script>
+// script.js
+
+document.addEventListener("DOMContentLoaded", function() {
+  var slides = document.getElementsByClassName("slide");
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+
+    setTimeout(showSlides, 3000); // Change slide every 3 seconds (adjust as needed)
+  }
+
+  window.changeSlide = function(n) {
+    slideIndex += n;
+    if (slideIndex > slides.length) {
+      slideIndex = 1;
+    } else if (slideIndex < 1) {
+      slideIndex = slides.length;
+    }
+
+    for (var i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+
+    slides[slideIndex - 1].style.display = "block";
+  };
+});
+
+</script>
+<body>
+  
+  <header>
+    <nav>
+      <ul>
+        <li><a href="tractor.html">Home</a>&nbsp;&nbsp;&nbsp;</li>
+        <li><a href="tractors.html">Tractors</a>&nbsp;&nbsp;&nbsp;</li>
+        <!-- <li><a href="services.html">Services</a>&nbsp;&nbsp;&nbsp;</li> -->
+        <li><a href="contact.html">Contact</a>&nbsp;&nbsp;&nbsp;</li>
+      </ul>
+    </nav>
+    
+  </header>
+  
+  
+
+  <section class="hero">
+    <div class="hero-content">
+<h1>Shree Radhe Krishna Tractors </h1>
+      <!-- <p>Jaipur-tonk Road,Deoli</p> -->
+      <h2>Jaipur Road, Deoli District Tonk(Raj.)</h2>
+      <!-- <a href="tractors.html" id="viewTractor" class="btn">View Tractors</a> -->
+    </div>
+  </section>
+
+  <!-- index.html -->
+<!-- index.html -->
+
+<section id="home" class="home-section">
+  <div class="container">
+    <div class="slideshow-container">
+      <div class="slide">
+        <img src="slide 1.jpg" alt="Slide 1">
+      </div>
+      <div class="slide">
+        <img src="slide 2.jpg" alt="Slide 4">
+      </div>
+      <div class="slide">
+        <img src="slide2.jpg" alt="Slide 2">
+      </div>
+      <div class="slide">
+        <img src="slide 3.jpg" alt="Slide 3">
+      </div>
+      <div class="slide">
+        <img src="slide 4.jpg" alt="Slide 4">
+      </div>
+
+      <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+      <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="featured-tractors">
+    <h2>Featured Tractors</h2>
+    <div class="tractor-card">
+      <img src="di-35-1674455028yy-1681973517.webp" alt="Tractor 1">
+      <h3>DI 35</h3>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+      <a href="contact.html" class="btn">Contact us</a>
+    </div>
+    <div class="tractor-card">
+      <img src="di-734-1636694384.png" alt="Tractor 2">
+      <h3>DI 734</h3>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+      <a href="contact.html" class="btn">Contact us</a>
+    </div>
+    <div class="tractor-card">
+      <img src="745-di-iii-sikander-1631526194.webp" alt="Tractor 3">
+      <h3>Di 745 III</h3>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+      <a href="contact.html" class="btn">Contact us</a>
+    </div>
+    <div class="tractor-card">
+      <img src="maharaja-tractor-gg-ff-1632820305.png" alt="Tractor 4">
+      <h3>Maharaja DI 745 III</h3>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+      <a href="contact.html" class="btn">Contact us</a>
+    </div>
+    <div class="tractor-card">
+      <img src="740.png" alt="Tractor 5">
+      <h3>DI 740 III</h3>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+      <a href="contact.html" class="btn">Contact us</a>
+    </div>
+    <div class="tractor-card">
+      <img src="50disikandar-500x500.webp" alt="Tractor 6">
+      <h3>DI 50</h3>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+      <a href="contact.html" class="btn">Contact us</a>
+    </div>
+    <div class="tractor-card">
+      <img src="https://www.sonalika.com/media/product-thumbnail/di-42-sikander-1671181725-1681981573.webp" alt="Tractor 6">
+      <h3>DI 42</h3>
+      <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+      <a href="contact.html" class="btn">Contact us</a>
+    </div>
+  </section>
+
+  <section class="services">
+  <h2>Our Services</h2>
+    <div class="service-card">
+      <img src="maintaince.jpg" alt="Service 1">
+      <h3> Tractor Sales and Services</h3>
+      <p>A service that provides sales, regular maintenance and repair of tractors
+        and other farming equipment.</p>
+    </div>
+    <div class="service-card">
+      <img src="service2.jpg" alt="Service 2">
+      <h3>Parts and Accessories</h3>
+      <p>A service that provides customers with parts and accessories for
+        their tractors and farming equipment.</p>
+    </div>
+    <!-- <div class="service-card">
+      <img src="service3.jpg" alt="Service 3">
+      <h3>Financing Options</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div> -->
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Shree Radhe Krishna Tractors. All rights reserved.</p>
+  </footer>
+</body>
+</html>
