@@ -1,0 +1,559 @@
+/* styles.css */
+
+/* General styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Header styles */
+header {
+  background-color: blue;
+  color: #ffffff;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* styles.css */
+
+/* Home section styles */
+.home-section {
+  text-align: center;
+  padding: 10px ;
+  padding-right: 500px;
+}
+
+.home-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.home-section .main-heading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.slideshow-container {
+  position: relative;
+  margin-top: 50px;
+  max-width: 1000px;
+}
+
+.slide {
+  display: none;
+  position: left;
+}
+
+.slide img {
+  align-items: left;
+  width: 1300px;
+  height: auto;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background-color 3s ease-out;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: -490px;
+}
+
+
+/* Hero section styles */
+.hero {
+  background-image: url('background\ tractors.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #210f0f;
+  text-align: center;
+  padding: 170px;
+  /* padding-top: -160px; */
+}
+
+.hero h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  margin-top: 60px;
+  position: relative;
+bottom: 210px;
+}
+.hero h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-style: oblique;
+  margin-top: -250px;
+}
+.hero p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  font-style: oblique;
+  margin-top: -150px;
+}
+#viewTractor{display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration-style: solid;
+  border-radius: 5px;
+  margin-top: 20px;
+  position: relative;
+  bottom: -155px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  text-decoration-style: solid;
+  border-radius: 5px;
+  margin-top: 20px;
+
+}
+
+/* Featured tractors section styles */
+.featured-tractors {
+  text-align: center;
+  padding: 50px;
+}
+
+.featured-tractors h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.tractor-card {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.tractor-card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.tractor-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Services section styles */
+.services {
+  background-color: #f4f4f4;
+  padding: 50px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.service-card {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.service-card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: blue;
+  color: #ffffff;
+  padding: 5px;
+  text-align: center;
+}
+
+
+/* animated code  */
+/* styles.css */
+
+/* Hero section animation */
+/* .hero {
+  background-image: url('background\ tractors.jpg');
+  background-size: cover;
+  color: #0f0808;
+  text-align: center;
+  padding: 100px;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  animation: slideInDown 1s ease-in;
+}
+
+@keyframes slideInDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.hero p {
+  font-size: 18px;
+  animation: fadeIn 1s ease-in;
+}
+
+.hero .btn {
+  animation: fadeIn 1s ease-in;
+}
+
+/* Featured tractors section animation */
+/* .featured-tractors {
+  text-align: center;
+  padding: 50px;
+  animation: slideInUp 1s ease-in;
+}
+
+@keyframes slideInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.featured-tractors h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+.tractor-card {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.tractor-card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in;
+}
+
+.tractor-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in;
+} */
+
+/* Services section animation */
+/* .services {
+  background-color: #f4f4f4;
+  padding: 50px;
+  text-align: center;
+  animation: slideInUp 1s ease-in;
+}
+
+.services h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+.service-card {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.service-card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in;
+} */
+
+/* Footer animation */
+/* footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+} */
+
+/* Rest of the code remains the same  */
+ 
+/* advanced animation */
+/* styles.css */
+
+/* Hero section animation */
+/* .hero {
+  background-image: url('background\ tractors.jpg');
+  background-size: cover;
+  color: #0f0a0a;
+  text-align: center;
+  padding: 100px;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 2;
+  }
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  animation: bounceInDown 2s ease-in-out;
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero p {
+  font-size: 18px;
+ 
+}
+
+.hero .btn {
+  animation: fadeIn 1s ease-in;
+} */
+
+/* Featured tractors section animation */
+/* .featured-tractors {
+  text-align: center;
+  padding: 50px;
+
+}
+
+
+.featured-tractors h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  animation: bounceInDown 1s ease-in;
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.tractor-card {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.tractor-card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  animation: flipInX 1s ease-in;
+}
+
+@keyframes flipInX {
+  0% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0;
+  }
+  40% {
+    transform: perspective(400px) rotateX(-20deg);
+  }
+  60% {
+    transform: perspective(400px) rotateX(10deg);
+    opacity: 1;
+  }
+  80% {
+    transform: perspective(400px) rotateX(-5deg);
+  }
+  100% {
+    transform: perspective(400px);
+  }
+}
+
+.tractor-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Services section animation */
+/* .services {
+  background-color: #f4f4f4;
+  padding: 50px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+   100% {
+    opacity: 1;
+  }
+}
+
+.services h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  animation: bounceInDown 1s ease-in;
+}
+
+.service-card {
+  display: inline-block;
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+}
+
+.service-card img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 10px;
+  animation: rotateIn 1s ease-in;
+}
+
+@keyframes rotateIn {
+  0% {
+    transform-origin: center;
+    transform: rotate(-200deg);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: center;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  animation: fadeIn 1s ease-in; 
+} 
+
+/* Footer animation */
+/* footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in;
+} */
+
+/* Rest of the code remains the same */
